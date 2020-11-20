@@ -1,0 +1,205 @@
+* {
+  font-family: system-ui;
+}
+.topnav {
+  background-color: #0079bf;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  scroll-behavior: smooth;
+}
+.rightside {
+  float: right;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  font-family: "Charlie Text", sans-serif;
+  font-size: 1.09375rem;
+}
+.signup {
+  color: #0079bf;
+  cursor: pointer;
+  font-weight: 500 !important;
+  background-color: #fff !important;
+  padding: 0.25rem 0.5rem;
+  line-height: 1.7;
+  border-radius: 0.3rem;
+  transition: none;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.login {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+}
+.login:hover {
+  text-decoration: underline;
+}
+.logo {
+  float: left;
+  font-family: "Charlie Text", sans-serif;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem 4rem;
+  text-decoration: none;
+  font-size: 24px;
+}
+.sec1div1 {
+  background: linear-gradient(135deg, #0079bf, #5067c5);
+  background-image: linear-gradient(
+    135deg,
+    rgb(0, 121, 191),
+    rgb(80, 103, 197)
+  );
+  display: block;
+  box-sizing: border-box;
+}
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.3fr 0fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "sec1text sec1text sec1pic sec1pic"
+    "sec1form sec1form sec1form ."
+    ". . . .";
+}
+.sec1text {
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+  text-align: left;
+  line-height: 1.2;
+  box-sizing: border-box;
+  font-family: system-ui;
+  grid-area: sec1text;
+  padding-top: 9rem;
+  padding-left: 11rem;
+  padding-right: 3rem;
+  box-sizing: border-box;
+}
+.sec1pic {
+  grid-area: sec1pic;
+  padding-top: 7rem;
+}
+.sec1form {
+  padding-right: 15px;
+  padding-bottom: 16px;
+  padding-left: 11rem;
+  padding-top: 21px;
+  font-family: system-ui;
+  font-family: inherit;
+  grid-area: sec1form;
+}
+.sec1form input {
+  padding: 12px 130px 16px 20px;
+  border-radius: 0.3rem;
+  border: 2px solid transparent;
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 21px;
+}
+.sec1form button {
+  background-color: #61bd4f;
+  color: white;
+  border-radius: 0.3rem;
+  padding: 10px 45px 18px 32px;
+  display: inline-block;
+  border: 2px solid transparent;
+  font-size: 24px;
+}
+.sec1form button:hover {
+  background-color: #439b46;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . sec2div2 sec2div2"
+    "sec2div1 sec2div1 sec2div2 sec2div2"
+    ". . sec2div2 sec2div2";
+}
+
+.sec2div1 {
+  grid-area: sec2div1;
+  word-wrap: break-word;
+  margin-bottom: 0.2rem;
+  margin-top: 0;
+  text-align: left;
+  box-sizing: border-box;
+  padding-top: 0.03rem;
+  padding-left: 11rem;
+  padding-right: 3rem;
+  box-sizing: border-box;
+}
+
+.sec2div1txt {
+  font-family: system-ui;
+  font-size: 1.3rem;
+  word-wrap: break-word;
+  font-family: system-ui;
+  line-height: 1.7;
+  margin-right: 7rem;
+}
+.sec2div1txt h3 {
+  font-size: 2.1875rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.sec2div1txt p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.sec2div1btn button {
+  font-family: system-ui;
+  color: #fff;
+  background-color: #6d8ea2;
+  border-color: #6d8ea2;
+  border-radius: 0.3rem;
+  padding: 5px 12px 6px 12px;
+  border: 2px solid transparent;
+  font-size: 21px;
+}
+.sec2div1btn button:hover {
+  background-color: #637f91;
+}
+.sec2div2 {
+  grid-area: sec2div2;
+  background: linear-gradient(#3eb9de, #3a80de);
+  margin-right: 11rem;
+  margin-left: -5rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.div2header {
+  background-color: rgba(11, 86, 139, 0.25);
+  border-radius: 6px;
+  color: white;
+  margin-left: 1.2rem;
+  margin-right: 30rem;
+  padding: 0px 12px 2px 12px;
+}
+.div2header h2 {
+  margin-left: 0.2rem;
+  padding-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
